@@ -1,0 +1,52 @@
+<html>
+<head>
+<style type="text/css">
+body{
+background-color:black;
+margin:0px;
+padding:0px;
+}
+
+.ma{
+background-color:black;
+width:100%;
+height:100%;
+}
+
+video{
+width:100%;
+height:100vh;
+object-fit:cover;
+}
+
+
+</style>
+</head>
+<body onload="pro()">
+
+<div onclick="pro()"  class="ma">
+   <video onended="document.write(1)" id="v">
+   <source src="/storage/emulated/0/DCIM/Camera/video_20240618_210526_edit.mp4">
+   </video>
+
+</div>
+
+
+<script type="text/javascript">
+alert("click darkness to continue...");
+let vi=document.getElementById("v");
+function pro(){
+if(vi.paused){
+vi.play();
+}
+
+
+
+}
+
+pro();
+</script>
+
+</body>
+
+</html>
